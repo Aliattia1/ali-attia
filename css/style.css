@@ -498,6 +498,8 @@ html.lenis, html.lenis body { height: auto; }
 .ba:focus-within { outline: 1px solid var(--taupe); outline-offset: 4px; }
 .ba__cap { display: flex; gap: 14px; align-items: baseline; margin: 16px 0 0; font-size: 11px; font-weight: 500; letter-spacing: .3em; text-transform: uppercase; }
 .ba__cap span { font-family: var(--serif); font-style: italic; font-size: 20px; letter-spacing: 0; color: var(--taupe); }
+.reno__more { margin-top: clamp(64px, 8vw, 110px); }
+.reno__more .grid-2 { max-width: 980px; }
 .shell { overflow: hidden; margin: clamp(80px, 10vw, 140px) 0 clamp(56px, 7vw, 100px); }
 .shell__track { display: flex; gap: 10px; width: max-content; will-change: transform; }
 .shell__track img { flex: none; height: clamp(200px, 26vw, 380px); width: auto; filter: grayscale(.6) brightness(.85); transition: filter .6s; }
