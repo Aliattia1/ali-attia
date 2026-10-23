@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200..700&family=Playfair+Display:ital,wght@0,400..700;1,400..600&display=swap">
   <link rel="preload" as="image" href="assets/img/wave1.webp" fetchpriority="high">
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="stylesheet" href="css/style.css?v=6">
   <script>
     // Motion runs only with JS; without it every element is simply visible.
     document.documentElement.classList.add('js');
@@ -135,7 +135,7 @@
           <li><a href="#swiss" data-img="assets/img/sw-slide.webp"><span class="pindex__code">A-200</span><span class="pindex__title">Swiss Heights</span><span class="pindex__desc">Student dormitory · Cultural centre</span></a></li>
           <li><a href="#anastasia" data-img="assets/img/collage2.webp"><span class="pindex__code">A-300</span><span class="pindex__title">Anastasia</span><span class="pindex__desc">Collage &amp; vision · AI-aided</span></a></li>
           <li><a href="#early" data-img="assets/img/sh-render.webp"><span class="pindex__code">A-400</span><span class="pindex__title">Early work</span><span class="pindex__desc">Office · Residential · Smith House</span></a></li>
-          <li><a href="#renovation" data-img="assets/img/ba-dining-after.webp"><span class="pindex__code">A-500</span><span class="pindex__title">Shell to home</span><span class="pindex__desc">Residential renovation · Before &amp; after</span></a></li>
+          <li><a href="#renovation" data-img="assets/img/ba-dining-after.webp"><span class="pindex__code">A-500</span><span class="pindex__title">Shell to home</span><span class="pindex__desc">Residential renovation · Site &amp; 3D render</span></a></li>
         </ol>
       </div>
       <div class="pindex__preview" aria-hidden="true"><img alt=""></div>
@@ -380,8 +380,9 @@
           <div>
             <p class="eyebrow">A-500 · Residential renovation</p>
             <h2 class="title reveal-text" id="reno-title">Shell <em>to home</em></h2>
-            <p class="sub">Before &amp; after · From site to finished interior</p>
-            <p class="intro">An apartment stripped back to brick and concrete, then rebuilt room by room: new services in the walls and floors, then plaster, stone, walnut and warm light. Drag across each image to see the same room before and after.</p>
+            <p class="sub">Site photos &amp; 3D renders · From shell to design vision</p>
+            <p class="intro">An apartment stripped back to brick and concrete, and Ali’s design for rebuilding it room by room: new services in the walls and floors, then plaster, stone, walnut and warm light. Drag across each image to compare the site with the design.</p>
+            <p class="reno__note"><span class="reno__note-icon" aria-hidden="true">3D</span><span><strong>The “after” images are 3D renders by Ali Attia.</strong> They show his design vision for each room, not photographs of the finished site. The “before” images are real photos taken on site.</span></p>
           </div>
           <figure class="reno__film reveal">
             <video src="assets/video/on-site.mp4" poster="assets/img/on-site-poster.webp" muted loop playsinline preload="none" aria-label="Walkthrough of the apartment on site, before the work"></video>
@@ -392,10 +393,10 @@
         <div class="ba-grid">
           <div class="ba-item">
             <div class="ba r-3-4" style="--x: 50%">
-              <img class="ba__after" src="assets/img/ba-dining-after.webp" alt="Dining area after: a marble table under a cluster of glass pendants, with a stone counter in front" loading="lazy">
+              <img class="ba__after" src="assets/img/ba-dining-after.webp" alt="Dining area 3D render by Ali Attia: a marble table under a cluster of glass pendants, with a stone counter in front" loading="lazy">
               <div class="ba__before"><img src="assets/img/ba-dining-before.webp" alt="Dining area before: the entrance door, a brick wall with exposed pipes and a channel cut in the floor" loading="lazy"></div>
               <span class="ba__tag ba__tag--before" aria-hidden="true">Before</span>
-              <span class="ba__tag ba__tag--after" aria-hidden="true">After</span>
+              <span class="ba__tag ba__tag--after" aria-hidden="true">After · 3D render</span>
               <span class="ba__handle" aria-hidden="true"><span></span></span>
               <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Dining area: slide to compare before and after">
             </div>
@@ -403,10 +404,10 @@
           </div>
           <div class="ba-item">
             <div class="ba r-3-4" style="--x: 50%">
-              <img class="ba__after" src="assets/img/ba-bath-after.webp" alt="Bathroom after: glass shower with copper fittings, a floating timber vanity and warm wall lighting" loading="lazy">
+              <img class="ba__after" src="assets/img/ba-bath-after.webp" alt="Bathroom 3D render by Ali Attia: glass shower with copper fittings, a floating timber vanity and warm wall lighting" loading="lazy">
               <div class="ba__before"><img src="assets/img/ba-bath-before.webp" alt="Bathroom before: raw brick walls, a toilet frame and pipes in a dug-out floor" loading="lazy"></div>
               <span class="ba__tag ba__tag--before" aria-hidden="true">Before</span>
-              <span class="ba__tag ba__tag--after" aria-hidden="true">After</span>
+              <span class="ba__tag ba__tag--after" aria-hidden="true">After · 3D render</span>
               <span class="ba__handle" aria-hidden="true"><span></span></span>
               <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Bathroom: slide to compare before and after">
             </div>
@@ -414,10 +415,10 @@
           </div>
           <div class="ba-item">
             <div class="ba r-3-4" style="--x: 50%">
-              <img class="ba__after" src="assets/img/ba-kitchen-after.webp" alt="Kitchen and dining wall after: walnut panelling, a stone breakfast bar and pendant lights over the table" loading="lazy">
+              <img class="ba__after" src="assets/img/ba-kitchen-after.webp" alt="Kitchen and dining wall 3D render by Ali Attia: walnut panelling, a stone breakfast bar and pendant lights over the table" loading="lazy">
               <div class="ba__before"><img src="assets/img/ba-kitchen-before.webp" alt="Kitchen and dining wall before: plasterboard sheets stacked against a bare concrete wall" loading="lazy"></div>
               <span class="ba__tag ba__tag--before" aria-hidden="true">Before</span>
-              <span class="ba__tag ba__tag--after" aria-hidden="true">After</span>
+              <span class="ba__tag ba__tag--after" aria-hidden="true">After · 3D render</span>
               <span class="ba__handle" aria-hidden="true"><span></span></span>
               <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Kitchen and dining wall: slide to compare before and after">
             </div>
@@ -425,10 +426,10 @@
           </div>
           <div class="ba-item">
             <div class="ba r-3-4" style="--x: 50%">
-              <img class="ba__after" src="assets/img/ba-living-after.webp" alt="Living room after: walnut panels, sheer curtains over the window, a recliner and a marble table" loading="lazy">
+              <img class="ba__after" src="assets/img/ba-living-after.webp" alt="Living room 3D render by Ali Attia: walnut panels, sheer curtains over the window, a recliner and a marble table" loading="lazy">
               <div class="ba__before"><img src="assets/img/ba-living-before.webp" alt="Living room before: bare concrete walls, a sliding balcony door and a service channel in the floor" loading="lazy"></div>
               <span class="ba__tag ba__tag--before" aria-hidden="true">Before</span>
-              <span class="ba__tag ba__tag--after" aria-hidden="true">After</span>
+              <span class="ba__tag ba__tag--after" aria-hidden="true">After · 3D render</span>
               <span class="ba__handle" aria-hidden="true"><span></span></span>
               <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Living room: slide to compare before and after">
             </div>
@@ -438,10 +439,10 @@
       </div>
 
       <div class="wrap reno__more">
-        <p class="eyebrow">Bathroom · more angles</p>
+        <p class="eyebrow">Bathroom · more angles · 3D renders by Ali Attia</p>
         <div class="grid-2">
-          <figure class="fig r-3-4 reveal" tabindex="0"><img src="assets/img/bath-2.webp" alt="Bathroom with a stone-clad WC wall, a window niche and a glass shower with copper fittings" loading="lazy"><figcaption>Shower &amp; WC wall</figcaption></figure>
-          <figure class="fig r-3-4 reveal" tabindex="0"><img src="assets/img/bath-3.webp" alt="Bathroom seen through the glass shower towards the vanity and a walnut door" loading="lazy"><figcaption>Vanity &amp; door</figcaption></figure>
+          <figure class="fig r-3-4 reveal" tabindex="0"><img src="assets/img/bath-2.webp" alt="3D render by Ali Attia: bathroom with a stone-clad WC wall, a window niche and a glass shower with copper fittings" loading="lazy"><figcaption>Shower &amp; WC wall · Render</figcaption></figure>
+          <figure class="fig r-3-4 reveal" tabindex="0"><img src="assets/img/bath-3.webp" alt="3D render by Ali Attia: bathroom seen through the glass shower towards the vanity and a walnut door" loading="lazy"><figcaption>Vanity &amp; door · Render</figcaption></figure>
         </div>
       </div>
 
@@ -465,7 +466,7 @@
         <dl class="endrow">
           <div><dt>Sheet</dt><dd>A-500</dd></div>
           <div><dt>Project</dt><dd>Residential renovation</dd></div>
-          <div><dt>Stage</dt><dd>Shell to finished interior</dd></div>
+          <div><dt>Stage</dt><dd>Site photos · design renders</dd></div>
           <div><dt>Type</dt><dd>Residential</dd></div>
         </dl>
       </div>
@@ -558,6 +559,6 @@
   <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
 
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
-  <script src="js/main.js?v=5" defer></script>
+  <script src="js/main.js?v=6" defer></script>
 </body>
 </html>
