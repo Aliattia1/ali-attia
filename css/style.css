@@ -484,8 +484,10 @@ html.lenis, html.lenis body { height: auto; }
 .ba { position: relative; overflow: hidden; background: #000; cursor: ew-resize; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
 .ba img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
 .ba__after { z-index: 0; }
-/* The clip sits on a wrapper, not the photo: Safari can drop an image that has both a clip and a filter */
-.ba__before { position: absolute; inset: 0; z-index: 1; overflow: hidden; -webkit-clip-path: inset(0 calc(100% - var(--x)) 0 0); clip-path: inset(0 calc(100% - var(--x)) 0 0); }
+/* The before photo sits in a wrapper as wide as the slider position, with the photo kept at full size inside.
+   No clip-path: some Safari/WebKit renders fail to paint a clipped image. */
+.ba__before { position: absolute; top: 0; bottom: 0; left: 0; z-index: 1; width: var(--x); overflow: hidden; }
+.ba .ba__before img { width: var(--bw, 100%); max-width: none; right: auto; }
 .ba__tag { position: absolute; top: 16px; z-index: 2; padding: 8px 12px; background: rgba(16, 15, 12, .72); color: var(--ivory); font-size: 9.5px; font-weight: 500; letter-spacing: .3em; text-transform: uppercase; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
 .ba__tag--before { left: 16px; }
 .ba__tag--after { right: 16px; }

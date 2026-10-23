@@ -282,7 +282,10 @@ const INSTAGRAM = { handle: "@ali.attia.design", url: "https://www.instagram.com
   });
 
   /* Before & after sliders */
+  // The before photo is drawn at the slider's full width inside its narrower wrapper
+  const baSize = new ResizeObserver((entries) => entries.forEach((e) => e.target.style.setProperty("--bw", e.contentRect.width + "px")));
   $$(".ba").forEach((ba) => {
+    baSize.observe(ba);
     const range = $(".ba__range", ba);
     let touched = false;
     const set = (v) => ba.style.setProperty("--x", v + "%");
