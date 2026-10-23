@@ -483,7 +483,9 @@ html.lenis, html.lenis body { height: auto; }
 .ba-item { min-width: 0; }
 .ba { position: relative; overflow: hidden; background: #000; cursor: ew-resize; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
 .ba img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
-.ba__before { clip-path: inset(0 calc(100% - var(--x)) 0 0); filter: grayscale(.2); }
+.ba__after { z-index: 0; }
+/* The clip sits on a wrapper, not the photo: Safari can drop an image that has both a clip and a filter */
+.ba__before { position: absolute; inset: 0; z-index: 1; overflow: hidden; -webkit-clip-path: inset(0 calc(100% - var(--x)) 0 0); clip-path: inset(0 calc(100% - var(--x)) 0 0); }
 .ba__tag { position: absolute; top: 16px; z-index: 2; padding: 8px 12px; background: rgba(16, 15, 12, .72); color: var(--ivory); font-size: 9.5px; font-weight: 500; letter-spacing: .3em; text-transform: uppercase; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
 .ba__tag--before { left: 16px; }
 .ba__tag--after { right: 16px; }
@@ -511,7 +513,7 @@ html.lenis, html.lenis body { height: auto; }
 .cursor { position: fixed; left: 0; top: 0; z-index: 600; width: 14px; height: 14px; margin: -7px 0 0 -7px; border-radius: 50%; border: 1px solid var(--ivory); pointer-events: none; mix-blend-mode: difference; display: grid; place-items: center; transition: width .45s var(--ease-out), height .45s var(--ease-out), margin .45s var(--ease-out), background-color .45s, opacity .3s; opacity: 0; }
 .cursor.is-on { opacity: 1; }
 .cursor.is-link { width: 46px; height: 46px; margin: -23px 0 0 -23px; }
-.cursor.is-label { width: 88px; height: 88px; margin: -44px 0 0 -44px; background: var(--ivory); }
+.cursor.is-label { width: 84px; height: 84px; margin: -42px 0 0 -42px; background: var(--ivory); border-color: var(--ivory); mix-blend-mode: normal; box-shadow: 0 10px 30px rgba(0, 0, 0, .35); }
 .cursor__label { font-size: 9.5px; font-weight: 600; letter-spacing: .26em; text-transform: uppercase; color: var(--black); opacity: 0; transition: opacity .3s; }
 .cursor.is-label .cursor__label { opacity: 1; }
 @media (hover: none), (pointer: coarse) { .cursor { display: none; } }
