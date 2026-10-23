@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ali Attia — Interior Architecture &amp; Design</title>
+  <meta name="description" content="AA Design Studio: Ali Attia, interior architect and designer in Cairo, Egypt. Adaptive reuse, heritage interiors and creative spaces, including Foldtown Studio in Downtown Cairo.">
+  <meta name="theme-color" content="#191814">
+  <!-- TODO(launch): remove this line when the site is final so search engines can list it -->
+  <meta name="robots" content="noindex">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ali Attia — Interior Architecture &amp; Design">
+  <meta property="og:description" content="AA Design Studio. Spaces, Defined. Interior architecture and design from Cairo, Egypt.">
+  <meta property="og:image" content="assets/img/wavewall.webp">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200..700&family=Playfair+Display:ital,wght@0,400..700;1,400..600&display=swap">
+  <link rel="preload" as="image" href="assets/img/wave1.webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Motion runs only with JS; without it every element is simply visible.
+    document.documentElement.classList.add('js');
+    try { if (sessionStorage.getItem('intro-seen')) document.documentElement.classList.add('intro-seen'); } catch (e) {}
+  </script>
+</head>
+<body>
+  <!-- Loader: the AA monogram draws itself, then the screen splits open -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__half loader__half--top"></div>
+    <div class="loader__half loader__half--bottom"></div>
+    <div class="loader__inner">
+      <svg class="loader__mark" viewBox="0 0 230 150">
+        <text class="loader__a loader__a--solid" x="18" y="128">A</text>
+        <text class="loader__a loader__a--line" x="88" y="128">A</text>
+      </svg>
+      <p class="loader__studio">Design Studio</p>
+      <p class="loader__sub">Interior Architecture &amp; Design</p>
+      <p class="loader__tag">Spaces, Defined.</p>
+    </div>
+  </div>
+
+  <a class="skip" href="#foldtown">Skip to projects</a>
+
+  <nav class="nav" aria-label="Main">
+    <a class="nav__brand" href="#top" aria-label="AA Design Studio, back to top">
+      <span class="logo" aria-hidden="true"><span class="logo__a">A</span><span class="logo__a logo__a--line">A</span></span>
+      <span class="nav__studio">Design Studio</span>
+    </a>
+    <p class="nav__center" aria-hidden="true">Ali Attia</p>
+    <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu">Menu <span class="burger" aria-hidden="true"></span></button>
+  </nav>
+
+  <div class="menu" id="menu" hidden>
+    <div class="menu__media" aria-hidden="true">
+      <img src="assets/img/wave1.webp" alt="" data-for="foldtown" loading="lazy">
+      <img src="assets/img/sw-slide.webp" alt="" data-for="swiss" loading="lazy">
+      <img src="assets/img/collage1.webp" alt="" data-for="anastasia" loading="lazy">
+      <img src="assets/img/sh-render.webp" alt="" data-for="early" loading="lazy">
+      <img src="assets/img/ba-dining-after.webp" alt="" data-for="renovation" loading="lazy">
+      <img src="assets/img/gallery.webp" alt="" data-for="about" loading="lazy">
+      <img src="assets/img/wave2.webp" alt="" data-for="instagram" loading="lazy">
+    </div>
+    <ol class="menu__list">
+      <li><a href="#foldtown" data-key="foldtown"><span>01</span>Foldtown Studio</a></li>
+      <li><a href="#swiss" data-key="swiss"><span>02</span>Swiss Heights</a></li>
+      <li><a href="#anastasia" data-key="anastasia"><span>03</span>Anastasia</a></li>
+      <li><a href="#early" data-key="early"><span>04</span>Early work</a></li>
+      <li><a href="#renovation" data-key="renovation"><span>05</span>Before &amp; after</a></li>
+      <li><a href="#about" data-key="about"><span>06</span>About</a></li>
+      <li><a href="#instagram" data-key="instagram"><span>07</span>Instagram</a></li>
+    </ol>
+    <p class="menu__foot"><span>Interior Architecture &amp; Design</span><em>Spaces, Defined.</em><span>Cairo, Egypt</span></p>
+  </div>
+
+  <main>
+    <!-- Hero: full-screen image + a strip of thumbnails; the active one grows to fill the screen -->
+    <header class="hero" id="top">
+      <div class="hero__bgs">
+        <img class="hero__bg is-active" src="assets/img/wave1.webp" alt="The giant display wall on the ground floor of Foldtown Studio" fetchpriority="high">
+        <img class="hero__bg" src="assets/img/sw-slide.webp" alt="The red slide through the void in Swiss Heights">
+        <img class="hero__bg" src="assets/img/gallery.webp" alt="Gallery and void in Foldtown Studio">
+        <img class="hero__bg" src="assets/img/sw-lounge.webp" alt="Students' lounge in Swiss Heights">
+        <img class="hero__bg" src="assets/img/wavewall.webp" alt="The wave wall beside the stair in Foldtown Studio">
+        <img class="hero__bg" src="assets/img/collage1.webp" alt="Anastasia collage of a city of domes">
+        <img class="hero__bg" src="assets/img/sw-room.webp" alt="Double room in Swiss Heights">
+      </div>
+      <div class="hero__shade"></div>
+
+      <div class="hero__text">
+        <p class="eyebrow">Interior Architecture &amp; Design · Cairo, Egypt</p>
+        <h1 class="hero__title"><span class="mask"><span>Ali Attia</span></span></h1>
+        <p class="hero__tag"><span class="mask"><span>Designing the unfinished</span></span></p>
+      </div>
+
+      <div class="hero__meta" aria-live="polite">
+        <span class="hero__code">A-100</span>
+        <span class="hero__project">Foldtown Studio</span>
+        <span class="hero__caption">The display wall</span>
+        <span class="hero__place">Downtown Cairo</span>
+      </div>
+
+      <div class="strip" aria-label="Featured spaces">
+        <div class="strip__track">
+          <button class="strip__item is-active" type="button" data-code="A-100" data-project="Foldtown Studio" data-caption="The display wall" data-place="Downtown Cairo" aria-label="Foldtown Studio, the display wall"><img src="assets/img/wave1.webp" alt=""></button>
+          <button class="strip__item" type="button" data-code="A-200" data-project="Swiss Heights" data-caption="The slide through the void" data-place="Dormitory" aria-label="Swiss Heights, the slide"><img src="assets/img/sw-slide.webp" alt=""></button>
+          <button class="strip__item" type="button" data-code="A-100" data-project="Foldtown Studio" data-caption="Gallery &amp; void" data-place="Downtown Cairo" aria-label="Foldtown Studio, gallery and void"><img src="assets/img/gallery.webp" alt=""></button>
+          <button class="strip__item" type="button" data-code="A-200" data-project="Swiss Heights" data-caption="Students’ lounge" data-place="Dormitory" aria-label="Swiss Heights, students' lounge"><img src="assets/img/sw-lounge.webp" alt=""></button>
+          <button class="strip__item" type="button" data-code="A-100" data-project="Foldtown Studio" data-caption="The wave wall" data-place="Downtown Cairo" aria-label="Foldtown Studio, the wave wall"><img src="assets/img/wavewall.webp" alt=""></button>
+          <button class="strip__item" type="button" data-code="A-300" data-project="Anastasia" data-caption="Collage 01" data-place="After Italo Calvino" aria-label="Anastasia, collage 01"><img src="assets/img/collage1.webp" alt=""></button>
+          <button class="strip__item" type="button" data-code="A-200" data-project="Swiss Heights" data-caption="Double room" data-place="Dormitory" aria-label="Swiss Heights, double room"><img src="assets/img/sw-room.webp" alt=""></button>
+        </div>
+      </div>
+
+      <div class="hero__progress" aria-hidden="true">
+        <span class="hero__count">01</span>
+        <span class="hero__bar"><span></span></span>
+        <span class="hero__total">07</span>
+      </div>
+      <p class="hero__brand" aria-hidden="true"><em>Spaces, Defined.</em></p>
+    </header>
+
+    <!-- Statement + project index -->
+    <section class="section dark" aria-labelledby="index-label">
+      <div class="wrap">
+        <p class="lede reveal-text">I turn existing buildings into places people want to walk into. My work keeps the <em>historic shell</em>, opens the inside up, and gives it a <em>new life</em>: studios, galleries, homes and places to meet.</p>
+        <div class="actions reveal-up">
+          <a class="btn btn--solid" href="#foldtown">See Foldtown Studio →</a>
+          <a class="btn" href="#instagram">Instagram</a>
+        </div>
+
+        <p class="eyebrow" id="index-label">Selected projects</p>
+        <ol class="pindex">
+          <li><a href="#foldtown" data-img="assets/img/wave1.webp"><span class="pindex__code">A-100</span><span class="pindex__title">Foldtown Studio</span><span class="pindex__desc">Creative hub · Final major project 2025/26</span></a></li>
+          <li><a href="#swiss" data-img="assets/img/sw-slide.webp"><span class="pindex__code">A-200</span><span class="pindex__title">Swiss Heights</span><span class="pindex__desc">Student dormitory · Cultural centre</span></a></li>
+          <li><a href="#anastasia" data-img="assets/img/collage2.webp"><span class="pindex__code">A-300</span><span class="pindex__title">Anastasia</span><span class="pindex__desc">Collage &amp; vision · AI-aided</span></a></li>
+          <li><a href="#early" data-img="assets/img/sh-render.webp"><span class="pindex__code">A-400</span><span class="pindex__title">Early work</span><span class="pindex__desc">Office · Residential · Smith House</span></a></li>
+          <li><a href="#renovation" data-img="assets/img/ba-dining-after.webp"><span class="pindex__code">A-500</span><span class="pindex__title">Shell to home</span><span class="pindex__desc">Residential renovation · Before &amp; after</span></a></li>
+        </ol>
+      </div>
+      <div class="pindex__preview" aria-hidden="true"><img alt=""></div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Spaces, <em>Defined.</em></span><span class="marquee__dot"></span><span>Interior Architecture</span><span class="marquee__dot"></span><span>Adaptive <em>reuse</em></span><span class="marquee__dot"></span><span>Cairo</span><span class="marquee__dot"></span>
+      </div>
+    </div>
+
+    <!-- Foldtown Studio -->
+    <section class="project dark" id="foldtown" aria-labelledby="foldtown-title">
+      <div class="opener">
+        <img class="opener__img" src="assets/img/wave1.webp" alt="Visitors standing in front of the giant display wall on the ground floor" loading="lazy">
+        <div class="opener__shade"></div>
+        <div class="opener__text">
+          <p class="eyebrow">A-100 · Final Major Project</p>
+          <h2 class="title reveal-text" id="foldtown-title">Foldtown <em>Studio</em></h2>
+          <p class="sub"><bdi lang="ar" dir="rtl">وسط البلد</bdi> · Creative mixed-use hub</p>
+        </div>
+        <p class="opener__meta"><span>Consoleya, Downtown Cairo</span><span>1:100 / 1:200</span><span>2025/26</span></p>
+      </div>
+
+      <div class="wrap">
+        <p class="intro reveal-text">A home for content creators inside Consoleya, the 1925 former French Consulate in Downtown Cairo. The historic shell stays. Inside, the floors are folded around a carved void and a giant display wall, so recording, editing, exhibiting and living all happen in one continuous vertical journey.</p>
+        <dl class="facts reveal-up">
+          <div><dt>Building</dt><dd>Consoleya, 5 Al Fadl St.</dd></div>
+          <div><dt>Built</dt><dd>1925 · Paul-Conin Pastour</dd></div>
+          <div><dt>Programme</dt><dd>Studios, podcast, gallery, residences</dd></div>
+          <div><dt>Coordinates</dt><dd>30.0495° N, 31.2403° E</dd></div>
+        </dl>
+
+        <div class="chapter">
+          <div class="chapter__label"><p class="eyebrow">01 · Context</p><h3>Downtown, full of memory</h3></div>
+          <div class="chapter__body">
+            <p>Downtown Cairo was laid out in the 1870s as the “Paris of the East”. It declined, changed hands and filled with cheap retail, and since the 2000s it has come back as a home for artists and thinkers. What stood out to me is that it feels full of memory but never silent: old walls, busy streets.</p>
+            <p>Consoleya sits on Al Fadl Street, a quiet pocket a few steps from everything. Today it is a coworking building in the Al Ismaelia portfolio. That made it a natural fit for a content creator hub, with vlog and street content right outside the door.</p>
+            <div class="stack">
+              <figure class="fig r-3-4 reveal" tabindex="0"><img src="assets/img/facade-photo.webp" alt="The restored neo-baroque façade of Consoleya" loading="lazy"><figcaption>Consoleya today</figcaption></figure>
+              <figure class="fig r-3-4 reveal" tabindex="0"><img src="assets/img/bw.webp" alt="Black and white photo looking up at a worn Downtown façade under netting" loading="lazy"><figcaption>Downtown, worn and present</figcaption></figure>
+              <figure class="fig r-3-4 reveal" tabindex="0"><img src="assets/img/street.webp" alt="A busy Downtown Cairo street at night with crowds and cars" loading="lazy"><figcaption>The street at night</figcaption></figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter">
+          <div class="chapter__label"><p class="eyebrow">02 · Concept</p><h3>The fold &amp; the void</h3></div>
+          <div class="chapter__body">
+            <blockquote class="quote reveal-text">The void is not space left over. It turns production into something you can watch.</blockquote>
+            <p>Folding lets the project move beyond a refurbishment. Slabs are cut so the lower four levels share one field of vision around the central void and the exhibition wall. Floors stop being isolated and become one connected creative space.</p>
+            <p>On the ground floor the façade windows were enlarged and rebalanced so the display wall can be seen from the street. The city doesn’t end at the façade; it walks in. The building becomes a spatial portrait of the neo-nomad content creator: always moving, with a solid centre.</p>
+            <div class="grid-2">
+              <figure class="fig fig--draw r-16-9 reveal" tabindex="0"><img src="assets/img/diagrams.webp" alt="Four black and white plan diagrams showing how the floors fold around the void" loading="lazy"><figcaption>Fold diagrams</figcaption></figure>
+              <figure class="fig fig--draw r-16-9 reveal" tabindex="0"><img src="assets/img/plan-ground.webp" alt="Ground floor plan with reception, café, exhibition and display wall seating" loading="lazy"><figcaption>Palimpsest in plan · ground floor</figcaption></figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter">
+          <div class="chapter__label"><p class="eyebrow">03 · Programme</p><h3>One building, many studios</h3></div>
+          <div class="chapter__body">
+            <dl class="prog reveal-up">
+              <div><dt>Ground</dt><dd>Reception, café, exhibition &amp; display wall seating</dd></div>
+              <div><dt>First</dt><dd>Main studio, Orbit podcast, gear gallery, post-production</dd></div>
+              <div><dt>Second</dt><dd>Recording &amp; jamming studios, green screen, open workspace</dd></div>
+              <div><dt>Third</dt><dd>Editing, shooting area, classroom, media loan, terrace</dd></div>
+              <div><dt>Upper</dt><dd>Creator residences with open workspace</dd></div>
+              <div><dt>Core</dt><dd>The void with viewing zones on every level</dd></div>
+              <div><dt>Shell</dt><dd>Neo-baroque envelope, kept and restored</dd></div>
+              <div><dt>Drawings</dt><dd>Full technical pack, A-000 to A-400</dd></div>
+            </dl>
+            <div class="grid-2">
+              <figure class="fig fig--draw r-3-4 reveal" tabindex="0"><img src="assets/img/exploded.webp" alt="Exploded axonometric of the building, floor by floor" loading="lazy"><figcaption>Spatial assembly · exploded axonometric</figcaption></figure>
+              <figure class="fig r-3-4 reveal" tabindex="0"><img src="assets/img/camera.webp" alt="Two people filming with a studio camera against an old brick wall" loading="lazy"><figcaption>Studio against the old wall</figcaption></figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter">
+          <div class="chapter__label"><p class="eyebrow">04 · Interiors</p><h3>Old shell, new layer</h3></div>
+          <div class="chapter__body">
+            <p>Aged plaster, brick and concrete carry the history. Glass, black metal, terrazzo and oak are the new layer. The stair is a place to look from, not only a way up: wooden treads, glass handrails, and the void always in view.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3D ring of interiors: turns as you scroll, drag to spin -->
+      <div class="ring-sec">
+        <div class="ring-stage">
+          <p class="ring-stage__label eyebrow">Interiors · scroll or drag</p>
+          <div class="ring">
+            <figure class="fig ring__item" tabindex="0"><img src="assets/img/stair.webp" alt="A man climbing the wooden stair with views across the void" loading="lazy"><figcaption>Circulation &amp; visual connection</figcaption></figure>
+            <figure class="fig ring__item" tabindex="0"><img src="assets/img/night.webp" alt="The stair at night with city lights through tall windows" loading="lazy"><figcaption>Stair at night</figcaption></figure>
+            <figure class="fig ring__item" tabindex="0"><img src="assets/img/gallery.webp" alt="Gallery space beside the void with colourful artworks" loading="lazy"><figcaption>Gallery &amp; void</figcaption></figure>
+            <figure class="fig ring__item" tabindex="0"><img src="assets/img/glass.webp" alt="Glass-walled post-production offices overlooking the void" loading="lazy"><figcaption>Post-production offices</figcaption></figure>
+            <figure class="fig ring__item" tabindex="0"><img src="assets/img/marble-stair.webp" alt="People looking down from viewing balconies around the void" loading="lazy"><figcaption>Viewing zones</figcaption></figure>
+            <figure class="fig ring__item" tabindex="0"><img src="assets/img/brick.webp" alt="Open workspace with long tables in front of an exposed brick wall" loading="lazy"><figcaption>Open workspace</figcaption></figure>
+            <figure class="fig ring__item" tabindex="0"><img src="assets/img/darkwave.webp" alt="Dark lounge with yellow seating in front of a gold and navy wave wall" loading="lazy"><figcaption>Lounge</figcaption></figure>
+            <figure class="fig ring__item" tabindex="0"><img src="assets/img/stair2.webp" alt="Warm-lit wooden stair against an aged plaster wall" loading="lazy"><figcaption>The stair against the old wall</figcaption></figure>
+            <figure class="fig ring__item" tabindex="0"><img src="assets/img/edit.webp" alt="Editing desk with a monitor in the post-production office" loading="lazy"><figcaption>Editing suite</figcaption></figure>
+            <figure class="fig ring__item" tabindex="0"><img src="assets/img/wave2.webp" alt="Blue and gold display wall seen from the gallery" loading="lazy"><figcaption>The display wall from the gallery</figcaption></figure>
+          </div>
+          <p class="ring-stage__title" aria-hidden="true">Old shell, <em>new layer</em></p>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <ul class="swatches reveal-up" aria-label="Materials">
+          <li><span class="sw" style="background:#cdbfa8"></span><b>Aged plaster</b><small>Existing</small></li>
+          <li><span class="sw" style="background:#b0744f"></span><b>Brick</b><small>Existing</small></li>
+          <li><span class="sw" style="background:#9a9893"></span><b>Concrete</b><small>Existing/new</small></li>
+          <li><span class="sw sw--terrazzo"></span><b>Terrazzo</b><small>New</small></li>
+          <li><span class="sw" style="background:#b88a5a"></span><b>Oak</b><small>New</small></li>
+          <li><span class="sw" style="background:#1d1e21"></span><b>Black metal</b><small>New</small></li>
+          <li><span class="sw sw--glass"></span><b>Glass</b><small>New</small></li>
+        </ul>
+        <dl class="endrow">
+          <div><dt>Sheet</dt><dd>A-100</dd></div>
+          <div><dt>Project</dt><dd>Foldtown Studio · IA&amp;D Final Major Project</dd></div>
+          <div><dt>Scale</dt><dd>1:100 / 1:200</dd></div>
+          <div><dt>Year</dt><dd>2025/26</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Swiss Heights: the red section -->
+    <section class="project red" id="swiss" aria-labelledby="swiss-title">
+      <div class="opener">
+        <img class="opener__img" src="assets/img/sw-lounge.webp" alt="Students' lounge with a red curved wall, red floor and beanbags" loading="lazy">
+        <div class="opener__shade"></div>
+        <div class="opener__text">
+          <span class="swiss-flag" aria-hidden="true"></span>
+          <p class="eyebrow">A-200 · Creative consolidation</p>
+          <h2 class="title reveal-text" id="swiss-title">Swiss <em>Heights</em></h2>
+          <p class="sub">A home away from home · Dormitory for Swiss students</p>
+        </div>
+        <p class="opener__meta"><span>Students’ lounge</span><span>1:100 / 1:200</span><span>Residential</span></p>
+      </div>
+
+      <div class="wrap">
+        <p class="intro reveal-text">A sliced slide becomes a walkable path. A bold red entry pulls students through lounges, a gallery, a café and an arcade. One half of the slide frames views with its circular form, the other invites movement, and its tip becomes seating. Fun, function and Swiss identity in one gesture.</p>
+        <dl class="facts reveal-up">
+          <div><dt>Type</dt><dd>Student dormitory</dd></div>
+          <div><dt>Floors 2–5</dt><dd>Rooms around a circular void</dd></div>
+          <div><dt>Third floor</dt><dd>Cultural centre &amp; gallery</dd></div>
+          <div><dt>Signature</dt><dd>The red slide</dd></div>
+        </dl>
+        <div class="chapter">
+          <div class="chapter__label"><p class="eyebrow">Spaces</p><h3>Red as a route</h3></div>
+          <div class="chapter__body">
+            <p>The cultural centre on the third floor brings Swiss and international students together through exhibitions, workshops and events, mixing Swiss minimalism with interactive pieces and links to the lake and public areas.</p>
+            <p>The dormitory spans floors two to five, with four double rooms per floor. Every room looks onto the circular interior void. Some floors add outdoor seating, laundry, kitchens and indoor dining.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Folding panels: they open flat as they pass the centre -->
+      <div class="flow-sec">
+        <div class="flow-stage">
+          <div class="flow">
+            <figure class="fig flow__item" tabindex="0"><img src="assets/img/sw-exterior.webp" alt="White model of the dormitory building with red accents in the windows" loading="lazy"><figcaption>Exterior</figcaption></figure>
+            <figure class="fig flow__item" tabindex="0"><img src="assets/img/sw-room.webp" alt="Double room with a red sculpted wall behind the bed" loading="lazy"><figcaption>Double room</figcaption></figure>
+            <figure class="fig flow__item" tabindex="0"><img src="assets/img/sw-cafe.webp" alt="Café with a red carpet, red tables and a round red pod chair" loading="lazy"><figcaption>Café</figcaption></figure>
+            <figure class="fig flow__item" tabindex="0"><img src="assets/img/sw-slide.webp" alt="The red slide cutting through the central void" loading="lazy"><figcaption>The slide through the void</figcaption></figure>
+            <figure class="fig flow__item" tabindex="0"><img src="assets/img/sw-gallery.webp" alt="White art gallery with red sculptural seating" loading="lazy"><figcaption>Art gallery</figcaption></figure>
+            <figure class="fig flow__item" tabindex="0"><img src="assets/img/sw-students.webp" alt="Students gathering on the red slide" loading="lazy"><figcaption>Students on the slide</figcaption></figure>
+          </div>
+          <div class="flow-stage__bar" aria-hidden="true"><span></span></div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="grid-2">
+          <figure class="fig fig--draw r-4-3 reveal" tabindex="0"><img src="assets/img/sw-axo.webp" alt="Exploded axonometric of the dormitory floors with red highlights" loading="lazy"><figcaption>Exploded axonometric</figcaption></figure>
+          <figure class="fig fig--draw r-4-3 reveal" tabindex="0"><img src="assets/img/sw-elev.webp" alt="Watercolour elevation study of the building with red elements" loading="lazy"><figcaption>Elevation study</figcaption></figure>
+        </div>
+        <dl class="endrow">
+          <div><dt>Sheet</dt><dd>A-200</dd></div>
+          <div><dt>Project</dt><dd>Swiss Heights · Creative consolidation</dd></div>
+          <div><dt>Scale</dt><dd>1:100 / 1:200</dd></div>
+          <div><dt>Type</dt><dd>Residential</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Anastasia: layered collage -->
+    <section class="project dark" id="anastasia" aria-labelledby="anastasia-title">
+      <div class="wrap">
+        <div class="ana">
+          <div class="ana__text">
+            <p class="eyebrow">A-300 · Collage &amp; vision</p>
+            <h2 class="title reveal-text" id="anastasia-title"><em>Anastasia</em></h2>
+            <p class="sub">Collage &amp; vision · after Italo Calvino</p>
+            <p class="intro">Anastasia is a city of jewels, gardens and water that awakens every desire at once. The trap: while you think you are enjoying it, you are a slave to what you want. These AI-aided collages test how space, structure and barriers invite people in and then steer them.</p>
+            <p class="eyebrow">Vision statement · Paradise &amp; prison</p>
+            <blockquote class="quote reveal-text">Where all desires awaken, and freedom is lost.</blockquote>
+          </div>
+          <div class="ana__layers">
+            <figure class="fig fig--natural ana__a" tabindex="0" data-depth="-0.06"><img src="assets/img/collage1.webp" alt="Black and white collage of a city of domes floating above falling figures" loading="lazy"><figcaption>Anastasia · collage 01</figcaption></figure>
+            <figure class="fig fig--natural ana__b" tabindex="0" data-depth="0.1"><img src="assets/img/collage2.webp" alt="Collage of hands pulling ropes around a colourful patterned city" loading="lazy"><figcaption>Collage experiments</figcaption></figure>
+            <p class="ana__word" aria-hidden="true" data-depth="0.18">D E S I R E</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Early work -->
+    <section class="project light" id="early" aria-labelledby="early-title">
+      <div class="wrap">
+        <p class="eyebrow">A-400 · Portfolio 2022</p>
+        <h2 class="title reveal-text" id="early-title">Early <em>work</em></h2>
+        <p class="sub">Portfolio 2022</p>
+        <p class="intro">Where it started: learning to draw every detail, from floor to ceiling, and to design around a real person’s story.</p>
+        <div class="cards">
+          <article class="card reveal-up">
+            <span class="num">01</span>
+            <h3>D5 Office</h3>
+            <figure class="fig fig--draw r-4-3" tabindex="0"><img src="assets/img/pf-section.webp" alt="Technical section drawing of the D5 office" loading="lazy"><figcaption>D5 Office · section</figcaption></figure>
+            <p>An office in District 5, New Cairo, worked out through detailed technical drawings: material thicknesses, heights and every small specification.</p>
+          </article>
+          <article class="card reveal-up">
+            <span class="num">02</span>
+            <h3>Residential unit</h3>
+            <figure class="fig fig--draw r-4-3" tabindex="0"><img src="assets/img/pf-axo.webp" alt="Axonometric of the residential unit showing furnished rooms" loading="lazy"><figcaption>Residential unit · axonometric</figcaption></figure>
+            <p>A home for Hania, a children’s book illustrator who dreams of a painting workshop and a space for kids’ reading and gardening sessions. Casual conversations turned into a plan that fits her life.</p>
+          </article>
+          <article class="card reveal-up">
+            <span class="num">03</span>
+            <h3>Smith House</h3>
+            <figure class="fig r-4-3" tabindex="0"><img src="assets/img/sh-render.webp" alt="3D section render of Smith House with double-height glazed spaces" loading="lazy"><figcaption>Smith House · 3D section</figcaption></figure>
+            <p>A study of Smith House through solid-and-void diagrams, an exploded axonometric and a 3D section showing its double-height spaces and large windows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before & after: a real apartment, from bare shell to finished home -->
+    <section class="project dark reno" id="renovation" aria-labelledby="reno-title">
+      <div class="wrap">
+        <div class="reno__head">
+          <div>
+            <p class="eyebrow">A-500 · Residential renovation</p>
+            <h2 class="title reveal-text" id="reno-title">Shell <em>to home</em></h2>
+            <p class="sub">Before &amp; after · From site to finished interior</p>
+            <p class="intro">An apartment stripped back to brick and concrete, then rebuilt room by room: new services in the walls and floors, then plaster, stone, walnut and warm light. Drag across each image to see the same room before and after.</p>
+          </div>
+          <figure class="reno__film reveal">
+            <video src="assets/video/on-site.mp4" poster="assets/img/on-site-poster.webp" muted loop playsinline preload="none" aria-label="Walkthrough of the apartment on site, before the work"></video>
+            <figcaption>On site · before</figcaption>
+          </figure>
+        </div>
+
+        <div class="ba-grid">
+          <div class="ba-item ba-item--wide">
+            <div class="ba r-4-3" style="--x: 50%">
+              <img class="ba__after" src="assets/img/ba-dining-after.webp" alt="Kitchen and dining after: a dining table under glass pendants, seen across a marble counter" loading="lazy">
+              <img class="ba__before" src="assets/img/ba-dining-before.webp" alt="Kitchen and dining before: walls knocked through to bare brick, pipes and rubble on the floor" loading="lazy">
+              <span class="ba__tag ba__tag--before" aria-hidden="true">Before</span>
+              <span class="ba__tag ba__tag--after" aria-hidden="true">After</span>
+              <span class="ba__handle" aria-hidden="true"><span></span></span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Kitchen and dining: slide to compare before and after">
+            </div>
+            <p class="ba__cap"><span>01</span> Kitchen &amp; dining</p>
+          </div>
+          <div class="ba-item">
+            <div class="ba r-3-4" style="--x: 50%">
+              <img class="ba__after" src="assets/img/ba-bath-after.webp" alt="Bathroom after: glass shower, floating timber vanity and warm wall lighting" loading="lazy">
+              <img class="ba__before" src="assets/img/ba-bath-before.webp" alt="Bathroom before: raw brick walls, a toilet frame and pipes in a dug-out floor" loading="lazy">
+              <span class="ba__tag ba__tag--before" aria-hidden="true">Before</span>
+              <span class="ba__tag ba__tag--after" aria-hidden="true">After</span>
+              <span class="ba__handle" aria-hidden="true"><span></span></span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Bathroom: slide to compare before and after">
+            </div>
+            <p class="ba__cap"><span>02</span> Bathroom</p>
+          </div>
+          <div class="ba-item">
+            <div class="ba r-3-4" style="--x: 50%">
+              <img class="ba__after" src="assets/img/ba-kitchen-after.webp" alt="Kitchen and dining wall after: walnut panelling, a stone breakfast bar and pendant lights over the table" loading="lazy">
+              <img class="ba__before" src="assets/img/ba-kitchen-before.webp" alt="Kitchen and dining wall before: plasterboard sheets stacked against a bare concrete wall" loading="lazy">
+              <span class="ba__tag ba__tag--before" aria-hidden="true">Before</span>
+              <span class="ba__tag ba__tag--after" aria-hidden="true">After</span>
+              <span class="ba__handle" aria-hidden="true"><span></span></span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Kitchen and dining wall: slide to compare before and after">
+            </div>
+            <p class="ba__cap"><span>03</span> Kitchen &amp; dining wall</p>
+          </div>
+          <div class="ba-item">
+            <div class="ba r-3-4" style="--x: 50%">
+              <img class="ba__after" src="assets/img/ba-diningroom-after.webp" alt="Dining room after: walnut panels, sheer curtains over the window, a recliner and a marble table" loading="lazy">
+              <img class="ba__before" src="assets/img/ba-diningroom-before.webp" alt="Dining room before: bare concrete walls, a sliding balcony door and a service channel in the floor" loading="lazy">
+              <span class="ba__tag ba__tag--before" aria-hidden="true">Before</span>
+              <span class="ba__tag ba__tag--after" aria-hidden="true">After</span>
+              <span class="ba__handle" aria-hidden="true"><span></span></span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Dining room: slide to compare before and after">
+            </div>
+            <p class="ba__cap"><span>04</span> Dining room</p>
+          </div>
+          <div class="ba-item">
+            <div class="ba r-3-4" style="--x: 50%">
+              <img class="ba__after" src="assets/img/ba-living-after.webp" alt="Living room after: walnut wall panels, cove lighting, a pale sofa and a marble floor" loading="lazy">
+              <img class="ba__before" src="assets/img/ba-living-before.webp" alt="Living room before: the entrance door, a brick wall with exposed pipes and a channel cut in the floor" loading="lazy">
+              <span class="ba__tag ba__tag--before" aria-hidden="true">Before</span>
+              <span class="ba__tag ba__tag--after" aria-hidden="true">After</span>
+              <span class="ba__handle" aria-hidden="true"><span></span></span>
+              <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Living room: slide to compare before and after">
+            </div>
+            <p class="ba__cap"><span>05</span> Living room</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The shell: site photos drifting past like a film strip -->
+      <div class="shell" aria-label="Site photos">
+        <div class="shell__track">
+          <img src="assets/img/shell-1.webp" alt="Corridor on site with bare plaster walls" loading="lazy">
+          <img src="assets/img/shell-2.webp" alt="Brick wall with new service channels cut into it" loading="lazy">
+          <img src="assets/img/shell-3.webp" alt="Column and rubble during demolition" loading="lazy">
+          <img src="assets/img/shell-4.webp" alt="Bathroom shell with a window and plumbing points" loading="lazy">
+          <img src="assets/img/shell-5.webp" alt="Bricked-up doorway in a concrete wall" loading="lazy">
+          <img src="assets/img/shell-6.webp" alt="Open space on site with sacks and tools" loading="lazy">
+          <img src="assets/img/shell-7.webp" alt="Plastered room with a doorway, before finishing" loading="lazy">
+          <img src="assets/img/shell-8.webp" alt="Freshly plastered wall beside a window" loading="lazy">
+          <img src="assets/img/shell-9.webp" alt="Dining room on site with a new service channel running to the balcony door" loading="lazy">
+        </div>
+      </div>
+
+      <div class="wrap">
+        <dl class="endrow">
+          <div><dt>Sheet</dt><dd>A-500</dd></div>
+          <div><dt>Project</dt><dd>Residential renovation</dd></div>
+          <div><dt>Stage</dt><dd>Shell to finished interior</dd></div>
+          <div><dt>Type</dt><dd>Residential</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <div class="marquee marquee--light" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Designing the <em>unfinished</em></span><span class="marquee__dot"></span><span>AA Design Studio</span><span class="marquee__dot"></span><span>Old shell, <em>new layer</em></span><span class="marquee__dot"></span>
+      </div>
+    </div>
+
+    <!-- About: the brand panel -->
+    <section class="section dark about" id="about" aria-labelledby="about-title">
+      <div class="wrap about__grid">
+        <div class="about__brand reveal-up" aria-hidden="true">
+          <span class="logo logo--xl"><span class="logo__a">A</span><span class="logo__a logo__a--line">A</span></span>
+          <p class="about__studio">Design Studio</p>
+          <p class="about__sub">Interior Architecture &amp; Design</p>
+          <span class="about__rule"></span>
+          <p class="about__tag">Spaces, Defined.</p>
+        </div>
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 class="title title--md reveal-text" id="about-title">Spaces that serve <em>people</em></h2>
+          <p class="about__big">My journey into interior architecture comes from a lifelong passion for design and a fascination with how spaces shape our lives. I bring creativity, function and aesthetic value to every project, and I care most about places that elevate how people live, work and meet.</p>
+          <p class="muted">Final Major Project 2025/26, Interior Architecture &amp; Design. Based in Cairo.</p>
+          <ul class="skills" aria-label="Skills">
+            <li><span>Adaptive reuse &amp; heritage interiors</span><small>Design</small></li>
+            <li><span>Concept, collage &amp; vision</span><small>Design</small></li>
+            <li><span>Technical packs &amp; detailing</span><small>Drawing</small></li>
+            <li><span>Plans, sections, elevations, RCP</span><small>Drawing</small></li>
+            <li><span>3D visualisation &amp; rendering</span><small>Visual</small></li>
+            <li><span>Photoshop · SketchUp</span><small>Software</small></li>
+            <li><span>Material &amp; furniture selection</span><small>Spec</small></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="section light" id="instagram" aria-labelledby="ig-title">
+      <div class="wrap">
+        <div class="ig__head">
+          <div>
+            <p class="eyebrow">Follow the work</p>
+            <h2 class="title title--md reveal-text" id="ig-title">On <em>Instagram</em></h2>
+          </div>
+          <div class="ig__cta">
+            <p class="ig__handle" data-ig-handle>@ali.attia.design</p>
+            <a class="btn btn--solid" data-ig-link href="https://www.instagram.com/ali.attia.design/" target="_blank" rel="noopener">Open Instagram ↗</a>
+          </div>
+        </div>
+        <ul class="ig__grid">
+          <li><a data-ig-link href="https://www.instagram.com/ali.attia.design/" target="_blank" rel="noopener"><img src="assets/img/wave2.webp" alt="Blue and gold display wall seen from the gallery" loading="lazy"></a></li>
+          <li><a data-ig-link href="https://www.instagram.com/ali.attia.design/" target="_blank" rel="noopener"><img src="assets/img/sw-students.webp" alt="Students gathering on the red slide in Swiss Heights" loading="lazy"></a></li>
+          <li><a data-ig-link href="https://www.instagram.com/ali.attia.design/" target="_blank" rel="noopener"><img src="assets/img/stair2.webp" alt="Warm-lit wooden stair against an aged plaster wall" loading="lazy"></a></li>
+          <li><a data-ig-link href="https://www.instagram.com/ali.attia.design/" target="_blank" rel="noopener"><img src="assets/img/facade-render.webp" alt="Render of the Consoleya entrance with arched windows and trees" loading="lazy"></a></li>
+          <li><a data-ig-link href="https://www.instagram.com/ali.attia.design/" target="_blank" rel="noopener"><img src="assets/img/collage1.webp" alt="Anastasia collage of a city of domes" loading="lazy"></a></li>
+          <li><a data-ig-link href="https://www.instagram.com/ali.attia.design/" target="_blank" rel="noopener"><img src="assets/img/edit.webp" alt="Editing desk with a monitor in the post-production office" loading="lazy"></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer dark">
+    <div class="wrap">
+      <div class="footer__brand">
+        <span class="logo logo--lg" aria-hidden="true"><span class="logo__a">A</span><span class="logo__a logo__a--line">A</span></span>
+        <p class="footer__tag"><em>Spaces, Defined.</em></p>
+      </div>
+      <div class="footer__inner">
+        <p>© <span data-year>2026</span> Ali Attia · Interior Architecture &amp; Design</p>
+        <p>Cairo, Egypt · <a href="#top">Back to top ↑</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <img class="lightbox__img" alt="">
+    <div class="lightbox__bar">
+      <p class="lightbox__cap"></p>
+      <div class="lightbox__btns">
+        <button type="button" class="lb-btn" data-lb="prev" aria-label="Previous image">←</button>
+        <button type="button" class="lb-btn" data-lb="next" aria-label="Next image">→</button>
+        <button type="button" class="lb-btn" data-lb="close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
